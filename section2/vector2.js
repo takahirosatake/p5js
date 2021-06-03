@@ -30,10 +30,9 @@ function draw () {//何回も実行される
   // vecVelocity.y += vecAccel.y;
   // vecLocation.y += vecVelocity.y;
 
-  vecVelocity.add(vecAccel); 
-  //vecVelocity(10, 10) + vecAccel(0.1 , 0.5) = vecVelocity(10.1, 10.5);
+  vecVelocity.add(vecAccel);
   vecLocation.add(vecVelocity);
-//vecLocation(10, 10) + vecVelocity(0.1 , 0.5) = vecLocation(310.1, 210.5);
+
 
   if(vecLocation.x > width || vecLocation.x < 0){
     vecVelocity.x *= -1;
